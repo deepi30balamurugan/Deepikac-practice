@@ -1,0 +1,32 @@
+INPUT & OUTPUT FORMAT:
+Input consists of 3 integers.
+First input corresponds to the weight that the boat can handle.
+Second input corresponds to the number of adults.
+Third input corresponds to the number of children.
+Output consists of a string.
+If the boat can handle weight display "Boat is stable" or else display "Boat will drown"
+Hint:
+Adult: 75
+Children: 50
+Sample Input:
+340
+2
+3
+Sample Output:
+Boat is Stable
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w,a,c;
+    cin>>w>>a>>c;
+    if(w>=((a*75)+(c*50)))
+    {
+        cout<<"Boat is Stable";
+    }
+    else
+    {
+        cout<<"Boat will drown";
+    }
+}
