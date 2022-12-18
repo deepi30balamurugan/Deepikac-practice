@@ -1,0 +1,36 @@
+INPUT FORMAT: 
+Input consists of 3 integers. 
+The first integer corresponds to the principal amount borrowed by Alice. 
+The second integer corresponds to the rate of interest 
+The third integer corresponds to the number of years. 
+OUTPUT FORMAT: 
+The output consists of 4 floating point values. 
+The first value corresponds to the interest. 
+The second corresponds to the amount. 
+The third value corresponds to the discount. 
+The last value corresponds to the final settlement. 
+All floating point values are to be rounded off to two decimal places
+Sample Input
+100
+1
+10
+Sample Output
+10.00
+110.00
+0.20
+109.80
+coding:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int p,r,n;
+    cin>>p>>r>>n;
+    float i,j,k,l;
+    i=(p*r*n)/100;
+    j=p+i;
+    k=(i/100)*2;
+    l=j-k;
+    cout<<fixed<<setprecision(2)<<i<<endl<<fixed<<setprecision(2)<<j<<endl<<k<<endl<<fixed<<setprecision(2)<<l;
+}
