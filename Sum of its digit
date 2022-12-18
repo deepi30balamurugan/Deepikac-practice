@@ -1,0 +1,17 @@
+Input Format:
+Input consists of an integer corresponding to the 2-digit number.
+Output Format:
+Output consists of an integer corresponding to the sum of its digits.
+Sample Input
+23
+Sample Output
+5
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<((a/10)+(a%10));
+}
