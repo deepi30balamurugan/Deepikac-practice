@@ -1,0 +1,28 @@
+Input Format: 
+Input consists of two integers 
+Output Format:
+Output consist of integers
+Sample Input :
+7
+5
+Sample Output :
+7 + 5 = 12
+7 - 5 = 2
+7 * 5 = 35
+7 / 5 = 1
+7 % 5 = 2
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f,g;
+    cin>>a>>b;
+    c=a+b;
+    d=a-b;
+    e=a*b;
+    f=a/b;
+    g=a%b;
+    cout<<a<<"+"<<b<<"="<<c<<endl<<a<<"-"<<b<<"="<<d<<endl<<a<<"*"<<b<<"="<<e<<endl<<a<<"/"<<b<<"="<<f<<endl<<a<<"%"<<b<<"="<<g;
+    
+}
