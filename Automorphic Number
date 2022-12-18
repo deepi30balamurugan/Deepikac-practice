@@ -1,0 +1,34 @@
+Input & Output Format:
+Input consists of a integer.
+Output consists of a string.
+If the number is true display "Automorphic" if not display "Not Automorphic Number"
+Sample Input:
+7
+Sample Output:
+Not Automorphic number
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    b=(a*a)%10;
+    if(a<10)
+    {
+        if(a==b)
+    {
+        cout<<" Automorphic Number";
+    }
+    else
+    {
+        cout<<"Not Automorphic Number";
+    }
+    }
+    else
+    {
+        cout<<"Invalid Input";
+    }
+
+}
+
