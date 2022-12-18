@@ -1,0 +1,27 @@
+INPUT FORMAT:
+Input consists of two floating point values denoting price of item1 and item2. 
+The third input denotes the discount value in percentage. 
+OUTPUT FORMAT: 
+The output consists of three floating values denoting total amount, discounted price and amount saved.
+Sample Input
+20.50
+45.40
+10
+Sample Output
+65.90
+59.31
+6.59
+coding:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,d,e,f;
+    float c;
+    cin>>a>>b>>c;
+    d=a+b;
+    e=(d-(d/100)*c);
+    f=(d/100)*c;
+    cout<<fixed<<setprecision(2)<<d<<endl<<fixed<<setprecision(2)<<e<<endl<<fixed<<setprecision(2)<<f;
+}
