@@ -1,0 +1,23 @@
+Write a program to generate the following series – 1, 2, 3, 5, 8….
+Sample Input:
+5
+Sample Output:
+1 2 3 5 8
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n1=1,n2=1,n,n3=0;
+    cin>>n;
+    cout<<n1<<" ";
+    for(int i=1;i<n;i++)
+    {
+        n3=n1+n2;
+        n1=n2;
+        n2=n3;
+        cout<<n3<<" ";
+        
+        
+    }
+}
