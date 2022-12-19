@@ -1,0 +1,50 @@
+Dutch and Nora are close friends. They both are studying in same school. Now they are in summer vacation. As they feel very bore, they ask their parents to take them to an exhibition. There Dutch and Nora play a game. There are three boxes with some number written on their top. There is a treasure in one of the three boxes, which has second largest number on its top. They want to type some code to open the box which has a treasure. They want to find the code correctly to open the box. The clue given to them to find the code is the largest number which divide the all the three given numbers.
+INPUT FORMAT:
+Input consists of three integers.
+First input corresponds to the number of the first box. 
+Second input corresponds to the number of the second box. 
+Third input corresponds to the number of the third box.
+Sample Input:
+2
+4
+6
+Sample Output:
+The treasure is in box which has number 4.
+The code to open the box is 2.
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(((a>b)&&(b>c))||((a<b)&&(b<c)))
+    {
+        cout<<"The treasure is in box which has number "<<b<<endl;
+    }
+    else if(((b>c)&&(c>a))||((b<c)&&(c<a)))
+    {
+        cout<<"The treasure is in box which has number "<<c<<endl;
+    }
+    else 
+    {
+        cout<<"The treasure is in box which has number "<<a<<endl;
+    }
+    if((b%a==0)&&(c%a==0))
+    {
+        cout<<"The code to open the box is "<<a<<endl;
+    }
+    else if((c%b==0)&&(a%b==0))
+    {
+        cout<<"The code to open the box is "<<b<<endl;
+    }
+    else if((b%c==0)&&(a%c==0))
+    {
+        cout<<"The code to open the box is "<<c<<endl;
+    }
+    else 
+    {
+        cout<<"The code to open the box is 1";
+    }
+  }
+
