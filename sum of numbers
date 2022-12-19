@@ -1,0 +1,23 @@
+Write a C program to print the sum of given numbers. The values must be scanned until the user enters -1 as value.
+Sample Input:
+1
+2
+3
+4
+-1
+Sample Output:
+10
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sum=0, i=1;
+    do 
+    {
+        cin>>i;
+        sum=sum+i;
+    }
+    while(i!=-1);
+    cout<<sum+1<<endl;
+}
