@@ -1,0 +1,19 @@
+Write a program to print the sum of given range of numbers.
+Sample Input:
+5
+10
+Sample Output:
+45
+coding:
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,sum=0,i;
+cin>>a>>b;
+for(i=a;i<=b;i++)
+{
+    sum+=i;
+   }
+   cout<<sum;
+ }
